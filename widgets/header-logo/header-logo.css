@@ -1,25 +1,104 @@
-html, body {
-    box-sizing: border-box;
+
+/* Main Container */
+.logo-header-container {
+    min-width: 320px;
+    max-width: 1920px;
+}
+
+/* UL Container */
+.logo-header-items {
     padding: 0px;
     margin: 0px;
-}
-
-#logo {
-    max-width: 100px;
-    height: auto;
-    margin-right: 50px;
-}
-
-#motto {
-    font-size: 1em;
-    padding-right: 20px;
-}
-
-.logo-header-items {
-    padding: 8px;
-    margin: 0px;
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
 }
+
+/* Magenda Logo */
+#logo {
+    max-width: 135px;
+    max-height: auto;
+}
+
+/* Celebrating life Motto */
+#motto {
+    text-align: center;
+    font-family: 'Oregano', sans-serif;
+    font-size: 23px;
+    min-width: 160px;
+}
+
+/* ------------------ */
+
+/* Mobiles & Small Tablets */
+@media  (max-width: 668px) {
+    
+    /* UL Container */
+    .logo-header-items {
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+    
+    /* Magenda Logo */
+    #logo {
+        margin: 0px 0px 0px 20px;
+    }
+
+    /* Celebrating life Motto */
+    #motto {
+        min-width: 160px;
+        margin: 0px 40px 0px 4px;
+    }
+
+}
+
+
+/* ------------------ */
+
+@media (min-width: 669px) and (max-width:1200px) {
+        /* Main Container */
+        .logo-header-container {
+            min-width: 320px;
+        }
+        
+        /* UL Container */
+        .logo-header-items {
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+        }
+        
+        /* Magenda Logo */
+        #logo {
+            margin: 0px 0px 0px 220px;
+        }
+    
+        /* Celebrating life Motto */
+        #motto {
+            min-width: 160px;
+            margin: 0px 240px 0px 4px;
+        }
+}
+
+/* Desktops & Tablets */
+@media (min-width: 1201px) {
+    * {
+        border: 1px solid black;
+    }
+
+    /* Main Container */
+    .logo-header-container {
+        min-width: 669px;
+    }
+    
+    /* UL Container */
+    .logo-header-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+

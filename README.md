@@ -10,7 +10,8 @@
 
     This collection is supposed to extend the Dawn theme and
     the plan is to avoid JavaScript as much as possible since
-    this is the way Dawn is coded.
+    this is the way Dawn is coded. Also I will avoid using
+    other frameworks like bootstrap.
 
     I will be updating this README as I go, with various
     troubleshoots that I encounter and possible solutions, 
