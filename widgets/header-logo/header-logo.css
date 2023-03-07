@@ -1,8 +1,12 @@
 
 /* Main Container */
 .logo-header-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     min-width: 320px;
-    max-width: 1920px;
+    height: 150px;
+    margin-top: 10px;
 }
 
 /* UL Container */
@@ -14,8 +18,8 @@
 
 /* Magenda Logo */
 #logo {
-    max-width: 135px;
-    max-height: auto;
+    width: 148px;
+    height: auto;
 }
 
 /* Celebrating life Motto */
@@ -24,6 +28,7 @@
     font-family: 'Oregano', sans-serif;
     font-size: 23px;
     min-width: 160px;
+    color: #DFA6A2;
 }
 
 /* ------------------ */
@@ -35,18 +40,19 @@
     .logo-header-items {
         display: flex;
         align-items: center;
-        justify-content:space-around;
+        justify-content: center;
+        width: 360px;
     }
     
     /* Magenda Logo */
     #logo {
-        margin: 0px 0px 0px 20px;
+        margin: 0px 10px 0px 0px;
     }
+
 
     /* Celebrating life Motto */
     #motto {
         min-width: 160px;
-        margin: 0px 40px 0px 4px;
     }
 
 }
@@ -55,47 +61,45 @@
 /* ------------------ */
 
 @media (min-width: 669px) and (max-width:1200px) {
-        /* Main Container */
-        .logo-header-container {
-            min-width: 320px;
-        }
-        
-        /* UL Container */
-        .logo-header-items {
-            display: flex;
-            align-items: center;
-            justify-content:space-around;
-        }
-        
-        /* Magenda Logo */
-        #logo {
-            margin: 0px 0px 0px 220px;
-        }
+    /* UL Container */
+    .logo-header-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+    }
     
-        /* Celebrating life Motto */
-        #motto {
-            min-width: 160px;
-            margin: 0px 240px 0px 4px;
-        }
+    /* Magenda Logo */
+    #logo {
+        margin: 0px 100px 0px 0px;
+    }
+
+
+    /* Celebrating life Motto */
+    #motto {
+        min-width: 160px;
+    }
 }
 
 /* Desktops & Tablets */
 @media (min-width: 1201px) {
-    * {
-        border: 1px solid black;
-    }
-
-    /* Main Container */
-    .logo-header-container {
-        min-width: 669px;
-    }
-    
     /* UL Container */
     .logo-header-items {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 360px;
+    }
+    
+    /* Magenda Logo */
+    #logo {
+        margin: 0px 10px 0px 0px;
+    }
+
+
+    /* Celebrating life Motto */
+    #motto {
+        min-width: 160px;
     }
 
 }

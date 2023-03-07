@@ -1,0 +1,135 @@
+<!-- v0.2 -->
+
+<div class="logo-header-container">
+  <ul class="logo-header-items">
+    <li class="logo-header-item left"><img
+        id="logo"
+        src={{ "Logo-test.jpg" | file_url }}
+        alt=""></li>
+    <li class="logo-header-item right">
+      <h2 id="motto">Celebrating Life<br> One Party at a Time</h2>
+    </li>
+  </ul>
+</div>
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Magenda Logo Header",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}
+
+
+{% style %}
+
+  /* Main Container */
+  .logo-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    height: 150px;
+    margin-top: 10px;
+  }
+
+  /* UL Container */
+  .logo-header-items {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  /* Magenda Logo */
+  #logo {
+    width: 148px;
+    height: auto;
+  }
+
+  /* Celebrating life Motto */
+  #motto {
+    text-align: center;
+    font-family: 'Oregano', sans-serif;
+    font-size: 23px;
+    min-width: 160px;
+    color: #DFA6A2;
+  }
+
+  /* ------------------ */
+
+  /* Mobiles & Small Tablets */
+  @media(max-width: 668px) {
+
+    /* UL Container */
+    .logo-header-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 360px;
+    }
+
+    /* Magenda Logo */
+    #logo {
+      margin: 0 10px 0 0;
+    }
+
+
+    /* Celebrating life Motto */
+    #motto {
+      min-width: 160px;
+    }
+
+  }
+
+
+  /* ------------------ */
+
+  @media(min-width: 669px) and (max-width:1200px) {
+    /* UL Container */
+    .logo-header-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 360px;
+    }
+
+    /* Magenda Logo */
+    #logo {
+      margin: 0 100px 0 0;
+    }
+
+
+    /* Celebrating life Motto */
+    #motto {
+      min-width: 160px;
+    }
+  }
+
+  /* Desktops & Tablets */
+  @media(min-width: 1201px) {
+    /* UL Container */
+    .logo-header-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 360px;
+    }
+
+    /* Magenda Logo */
+    #logo {
+      margin: 0 10px 0 0;
+    }
+
+
+    /* Celebrating life Motto */
+    #motto {
+      min-width: 160px;
+    }
+
+  }
+{% endstyle %}
