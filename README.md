@@ -20,10 +20,10 @@
 
 # Tips and Tricks:
 
-    **Upload fonts to Shopify:**
+**Upload fonts to Shopify:**
 
     There is a lot of outdated information about how to do it.
-    Assuming you are using the Dawn theme, the steps are as follows:
+    The process should be similar for any theme.
 
     1) Download your font. You can use ttf, woff, woff2. Probably more
     but I've tried it with those formats.
