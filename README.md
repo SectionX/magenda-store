@@ -20,7 +20,7 @@
 
 # Tips and Tricks:
 
-    Upload fonts to Shopify:
+    **Upload fonts to Shopify:**
 
     There is a lot of outdated information about how to do it.
     Assuming you are using the Dawn theme, the steps are as follows:
@@ -43,9 +43,9 @@
     }
 
     5) The format names are as follows:
-        woff2 -> woff2
-        woff -> woff
-        ttf -> TrueType
+        .woff2 -> woff2
+        .woff -> woff
+        .ttf -> TrueType
 
 
 # Navigating this repo:
