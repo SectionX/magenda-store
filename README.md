@@ -29,8 +29,10 @@
     but I've tried it with those formats.
 
     2) Go to admin/content/files and upload the font file.
-    !IMPORTANT - Do NOT upload it as an Asset. This is outdated
-    and for some reason it doesn't work.
+    There are a lot of guides suggesting uploading the
+    font file as an asset. For me this doesn't work. On the
+    other hand I never had a problem when uploading it on 
+    the CMS 
 
     3) Go to the theme's main liquid file. For Dawn it's
     "theme.liquid". You need to make sure that it's a .liquid
@@ -39,13 +41,14 @@
     4) Inside a {% style %} tag add the following:
     @font-face {
         font-family: "Your font's name";
-        src: url {{ "The font's file name" | file_url }} format ("format's name")
+        src: url {{ "The font's file name" | file_url }} format ("format's name");
     }
 
     5) The format names are as follows:
         .woff2 -> woff2
         .woff -> woff
         .ttf -> TrueType
+        example: src: url {{ "my_font.woff2" | file_url }} format ("woff2");
 
 
 # Navigating this repo:
