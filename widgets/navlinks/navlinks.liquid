@@ -1,0 +1,36 @@
+<div id="navlinks">
+
+  <span id="navstring">
+    {% assign links = "Συλλογές" %}
+
+    {% for col in product.collections %}
+
+      {% capture _link %}
+        <a class="navstring-item" href="{{ col.url }}">
+          <u>{{ col.title }}</u>
+        </a>
+      {% endcapture %}
+
+      {% if col.url == product.collections[0].url %}
+        {% capture links %}
+          {{ links }}: {{ _link }}
+        {% endcapture %}
+      {% else %}
+        {% capture links %}
+          {{ links }} | {{ _link }}
+        {% endcapture %}
+      {% endif %}
+
+    {% endfor %}
+
+    {{ links }}
+  </span>
+
+</div>
+
+{% style %}
+  #navstring,
+  .navstring-item {
+    text-decoration: none;
+    color: #121212; }
+{% endstyle %}
